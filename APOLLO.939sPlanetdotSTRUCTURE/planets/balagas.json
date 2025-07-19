@@ -1,0 +1,74 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/body_schema.json",
+  "name": "Balagas",
+  "starSystem": "Jam5",
+  "removeChildren": [ "Sector/Star/Audio_Star/SurfaceAudio_Sun" ],
+  "Base": {
+    "surfaceSize": 7,
+    "surfaceGravity": 5,
+    "centerOfSolarSystem": false,
+    "soiOverride": 200
+  },
+  "HeightMap": {
+    "minHeight": 7,
+    "maxHeight": 7,
+    "heightMap": "planets/assets/BalagasH.png",
+    "textureMap": "planets/assets/BalagasT.png"
+  },
+  "MapMarker": { "enabled": true },
+  "Orbit": {
+    "primaryBody": "MagMag",
+    "semiMajorAxis": 2000,
+    "inclination": -1
+  },
+  "Atmosphere": {
+    "size": 200,
+    "atmosphereTint": {
+      "a": 0,
+      "r": 255,
+      "g": 103,
+      "b": 0
+    },
+    "fogDensity": 0.2,
+    "fogSize": 200,
+    "fogTint": {
+      "a": 0,
+      "r": 255,
+      "g": 103,
+      "b": 0
+    },
+    "clouds": {
+      "fluidType": "cloud",
+      "hasLightning": false,
+      "cloudsPrefab": "giantsDeep",
+      "texturePath": "planets/assets/Balagas_texture.png",
+      "outerCloudRadius": 200,
+      "innerCloudRadius": 1,
+      "tint": {
+        "a": 0,
+        "r": 255,
+        "g": 103,
+        "b": 0
+      }
+    }
+  },
+  "Props": {
+    "translatorText": [
+      {
+        "xmlFile": "planets/assets/dialogue/BalagasDreamSpeak.xml",
+        "type": "recorder",
+        "alignRadial": true,
+        "position": {
+          "x": 0,
+          "y": 0,
+          "z": 7
+        }
+      }
+    ]
+  },
+  "ShipLog": {
+    "xmlFile": "planets/assets/shiplogs/B_fact.xml",
+    "spriteFolder": "planets/assets/shiplogs/sprites",
+    "mapMode": { "revealedSprite": "planets/assets/shiplogs/sprites/Balagas_icon.png" }
+  }
+}

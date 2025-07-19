@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+	<NameField>APOLLO</NameField>
+	<DialogueNode>
+		<Name>start</Name>
+		<EntryCondition>DEFAULT</EntryCondition>
+		<Dialogue>
+			<Page>Hello there!</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>hello</Text>
+				<DialogueTarget>listen</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>listen</Name>
+		<Dialogue>
+			<Page>The mod you’re about to see doesn’t have a big, epic story…</Page>
+			<Page>but what it DOES have is lots of funny little moons! you wanna see?</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>Sure!</Text>
+				<DialogueTarget>yes</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>say no out of spite</Text>
+				<DialogueTarget>no</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>yes</Name>
+		<Dialogue>
+			<Page>great! see you there! Just make sure you fly into the blackhole with your ship as opposed to walking straight in</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>sounds horrible out of context but o-kay!</Text>
+				<DialogueTarget>leave</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>no</Name>
+		<Dialogue>
+			<Page>great! see you there! Just make sure you fly into the blackhole with your ship as opposed to walking straight in</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>but i just said no</Text>
+				<DialogueTarget>no2</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>no2</Name>
+		<Dialogue>
+			<Page>but by choosing to download this mod you’ve already decided you’d be willing to play it</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>...</Text>
+				<DialogueTarget>leave</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>leave</Name>
+		<Dialogue>
+			<Page>see ya!</Page>
+		</Dialogue>
+	</DialogueNode>
+</DialogueTree>

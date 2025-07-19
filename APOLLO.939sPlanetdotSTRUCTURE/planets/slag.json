@@ -1,0 +1,58 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/body_schema.json",
+  "name": "Slag",
+  "starSystem": "Jam5",
+  "removeChildren": [ "Sector/Star/Audio_Star/SurfaceAudio_Sun" ],
+  "Base": {
+    "surfaceGravity": 12,
+    "surfaceSize": 16,
+    "centerOfSolarSystem": false,
+    "hasFluidDetector": false,
+    "soiOverride": 20
+  },
+  "ProcGen": {
+    "scale": 15,
+    "color": {
+      "a": 255,
+      "r": 60,
+      "g": 60,
+      "b": 60
+    }
+  },
+  "MapMarker": { "enabled": true },
+  "destroy": false,
+  "Orbit": {
+    "primaryBody": "MagMag",
+    "semiMajorAxis": 450,
+    "isTidallyLocked": true
+  },
+  "Props": {
+    "translatorText": [
+      {
+        "xmlFile": "planets/assets/dialogue/MagMagDreamSpeak.xml",
+        "type": "recorder",
+        "position": {
+          "x": 0,
+          "y": -15.8,
+          "z": 0
+        },
+        "alignRadial": true
+      },
+      {
+        "xmlFile": "planets/assets/dialogue/SlagDreamSpeak.xml",
+        "type": "recorder",
+        "position": {
+          "x": 0,
+          "y": 14.8,
+          "z": 4
+        },
+        "alignRadial": true
+      }
+    ]
+  },
+  "ShipLog": {
+    "xmlFile": "planets/assets/shiplogs/S_fact.xml",
+    "spriteFolder": "planets/assets/shiplogs/sprites",
+    "mapMode": { "revealedSprite": "planets/assets/shiplogs/sprites/Slag_icon.png" }
+  }
+}

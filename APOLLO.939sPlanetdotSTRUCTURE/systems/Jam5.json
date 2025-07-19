@@ -1,0 +1,146 @@
+﻿{
+  "$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/star_system_schema.json",
+  "entryPositions": [
+    {
+      "id": "MM_FACT",
+      "position": {
+        "x": -100,
+        "y": 0
+      }
+    },
+    {
+      "id": "S_FACT",
+      "position": {
+        "x": 30,
+        "y": 0
+      }
+    },
+    {
+      "id": "HB_FACT",
+      "position": {
+        "x": 160,
+        "y": 0
+      }
+    },
+    {
+      "id": "HB_FACT_WIN",
+      "position": {
+        "x": 160,
+        "y": -160
+      }
+    },
+    {
+      "id": "SB_FACT",
+      "position": {
+        "x": 160,
+        "y": 170
+      }
+    },
+    {
+      "id": "B_FACT",
+      "position": {
+        "x": 290,
+        "y": 0
+      }
+    },
+    {
+      "id": "M_FACT",
+      "position": {
+        "x": 420,
+        "y": 0
+      }
+    }
+  ],
+  "curiosities": [
+    {
+      "id": "MM_REC",
+      "color": {
+        "r": 246,
+        "g": 105,
+        "b": 7,
+        "a": 255
+      },
+      "highlightColor": {
+        "r": 248,
+        "g": 108,
+        "b": 9,
+        "a": 255
+      }
+    },
+    {
+      "id": "S_REC",
+      "color": {
+        "r": 68,
+        "g": 58,
+        "b": 58,
+        "a": 255
+      },
+      "highlightColor": {
+        "r": 70,
+        "g": 60,
+        "b": 60,
+        "a": 255
+      }
+    },
+    {
+      "id": "HB_REC",
+      "color": {
+        "r": 131,
+        "g": 185,
+        "b": 37,
+        "a": 255
+      },
+      "highlightColor": {
+        "r": 133,
+        "g": 188,
+        "b": 39,
+        "a": 255
+      }
+    },
+      {
+        "id": "B_REC",
+        "color": {
+          "r": 255,
+          "g": 95,
+          "b": 21,
+          "a": 255
+        },
+        "highlightColor": {
+          "r": 255,
+          "g": 98,
+          "b": 23,
+          "a": 255
+        }
+      },
+    {
+      "id": "M_REC",
+      "color": {
+        "r": 43,
+        "g": 207,
+        "b": 255,
+        "a": 255
+      },
+      "highlightColor": {
+        "r": 45,
+        "g": 209,
+        "b": 255,
+        "a": 255
+      }
+    },
+    {
+      "id": "HB_WIN",
+      "color": {
+        "r": 0,
+        "g": 255,
+        "b": 0,
+        "a": 255
+      },
+      "highlightColor": {
+        "r": 0,
+        "g": 255,
+        "b": 0,
+        "a": 255
+      }
+    }
+  ]
+}

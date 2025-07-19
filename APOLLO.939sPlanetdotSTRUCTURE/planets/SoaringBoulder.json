@@ -1,0 +1,51 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/body_schema.json",
+  "removeChildren": [ "Sector/Star/Audio_Star/SurfaceAudio_Sun" ],
+  "name": "Soaring Boulder",
+  "starSystem": "Jam5",
+  "Base": {
+    "surfaceSize": 5,
+    "soiOverride": 7,
+    "surfaceGravity": 5,
+    "centerOfSolarSystem": false,
+    "groundSize": 5
+  },
+  "Orbit": {
+    "isMoon": true,
+    "isTidallyLocked": true,
+    "primaryBody": "Homely Body",
+    "semiMajorAxis": 155
+  },
+  "MapMarker": { "enabled": true },
+  "ProcGen": {
+    "scale": 5,
+    "color": {
+      "a": 255,
+      "r": 211,
+      "g": 211,
+      "b": 211
+    }
+  },
+  "ShipLog": {
+    "xmlFile": "planets/assets/shiplogs/SB_fact.xml",
+    "spriteFolder": "planets/assets/shiplogs/sprites",
+    "mapMode": {
+      "revealedSprite": "planets/assets/shiplogs/sprites/SoaringBoulder_icon.png",
+      "scale": 0.5
+    }
+  },
+  "Props": {
+    "translatorText": [
+      {
+        "xmlFile": "planets/assets/dialogue/SBDreamSpeak.xml",
+        "type": "recorder",
+        "alignRadial": true,
+        "position": {
+          "x": 0,
+          "y": 0,
+          "z": -5
+        }
+      }
+    ]
+  }
+}

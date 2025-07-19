@@ -1,0 +1,22 @@
+﻿<AstroObjectEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/shiplog_schema.xsd">
+<ID>HB</ID>
+<Entry>
+	<ID>HB_FACT</ID>
+	<Name>Homely Body</Name>
+	<Curiosity>HB_REC</Curiosity>
+	<ExploreFact>
+		<ID>HB_FACT_X1</ID>
+		<Text>I found and read the recorder for Homely Body in its lake!</Text>
+	</ExploreFact>
+</Entry>
+	<Entry>
+		<ID>HB_FACT_WIN</ID>
+		<Name>i won!</Name>
+		<Curiosity>HB_WIN</Curiosity>
+		<ExploreFact>
+			<ID>HB_FACT_X1_WIN</ID>
+			<Text>i completed APOLLO's task and he handed me my win! it was a picture of a CGI trophy with the caption "YOU'RE WINNER !"</Text>
+		</ExploreFact>
+	</Entry>
+</AstroObjectEntry>

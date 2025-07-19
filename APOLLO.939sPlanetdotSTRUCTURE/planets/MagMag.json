@@ -1,0 +1,61 @@
+﻿{
+  "$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/body_schema.json",
+  "name": "MagMag",
+  "starSystem": "Jam5",
+  "removeChildren": [ "Sector/Star/Audio_Star/SurfaceAudio_Sun" ],
+  "Base": {
+    "gravityFallOff": "inverseSquared",
+    "surfaceSize": 300,
+    "surfaceGravity": 15,
+    "centerOfSolarSystem": true,
+    "hasFluidDetector": false
+  },
+  "MapMarker": {
+    "enabled": true
+  },
+  "Atmosphere": {
+    "size": 450
+  },
+  "Orbit": {
+    "siderealPeriod": -1.5,
+    "staticPosition": {
+      "x": 3000,
+      "y": -5000,
+      "z": -3000
+    }
+  },
+  "Lava": {
+    "size": 300
+  },
+  "Star": {
+    "solarLuminosity": 1,
+    "lightRadius": 2500,
+    "lifespan": 9999,
+    "size": 290,
+    "hasAtmosphere": false,
+      "solarFlareSettings": {"scaleFactor": 0}
+  },
+  "Rings": [
+    {
+      "texture": "planets/assets/ring_texture.png",
+      "fluidType": "sand",
+      "innerRadius": 2470,
+      "outerRadius": 2500,
+      "unlit": true
+    },
+    {
+      "texture": "planets/assets/ring_texture.png",
+      "fluidType": "sand",
+      "innerRadius": 2390,
+      "outerRadius": 2420,
+      "unlit": true
+    }
+  ],
+
+  "ShipLog": {
+    "xmlFile": "planets/assets/shiplogs/MagMag_fact.xml",
+    "spriteFolder": "planets/assets/shiplogs/sprites",
+    
+    "mapMode": { "revealedSprite": "planets/assets/shiplogs/sprites/MagMag_icon.png" }
+  }
+}

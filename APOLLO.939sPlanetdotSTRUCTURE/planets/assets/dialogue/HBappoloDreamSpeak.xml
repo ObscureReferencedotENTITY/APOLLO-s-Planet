@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+	<NameField>APOLLO</NameField>
+	<DialogueNode>
+		<Name>start</Name>
+		<EntryCondition>DEFAULT</EntryCondition>
+		<Dialogue>
+			<Page>Hey! Glad you made it!</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>What is there to do?</Text>
+				<DialogueTarget>task</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>there's lighting glitches with Slag and Homely Body</Text>
+				<DialogueTarget>bug</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<RequiredLogCondition>HB_FACT_X1</RequiredLogCondition>
+				<RequiredLogCondition>SB_FACT_X1</RequiredLogCondition>
+				<Text>do you think Soaring Boulder is the thing that crashed into Homely Body?</Text>
+				<DialogueTarget>CrashOut</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<RequiredLogCondition>MM_FACT_X1</RequiredLogCondition>
+				<RequiredLogCondition>S_FACT_X1</RequiredLogCondition>
+				<RequiredLogCondition>HB_FACT_X1</RequiredLogCondition>
+				<RequiredLogCondition>SB_FACT_X1</RequiredLogCondition>
+				<RequiredLogCondition>B_FACT_X1</RequiredLogCondition>
+				<RequiredLogCondition>M_FACT_X1</RequiredLogCondition>
+				<Text>i found and read all the recorders!</Text>
+				<DialogueTarget>ending</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>leave</Text>
+				<DialogueTarget>leave</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>task</Name>
+		<Dialogue>
+			<Page>Huh? What do you mean? Aren’t the sights enough?</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>Well, wouldn’t a good mod have a win condition?</Text>
+				<DialogueTarget>ta2k</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>ta2k</Name>
+		<Dialogue>
+			<Page>Well it’s not like this mod is winning any contests but you’re right.</Page>
+			<Page>Hm… tell you what, let’s make a deal. I’ve jotted down notes about each moon here and made the 1000 iq play of leaving them there. You visit each body, find and read what each note has to say then come back to me and I hand you your win. How’s that sound?</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>got it, sounds like a plan.</Text>
+				<DialogueTarget>start</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>bug</Name>
+		<Dialogue>
+			<Page>I know... :broken_heart:</Page>
+			<Page>worst part is i don't even know what causing it, much less how to fix it. the OW modding discord couldn't come up with anything.</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>back</Text>
+				<DialogueTarget>start</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>CrashOut</Name>
+		<Dialogue>
+			<Page>... you know what that would explain why it has it's own subtle gravity, must've been so dense as to survive the crash.</Page>
+			<Page>i just hope that throwing it into orbit doesn't count as vandalism in any sense</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>back</Text>
+				<DialogueTarget>start</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+	
+
+	<DialogueNode>
+		<Name>ending</Name>
+		<Dialogue>
+			<Page>great! i hope you could wait a sec because some credits are in order</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>go for it</Text>
+				<DialogueTarget>ending2</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>ending2</Name>
+		<Dialogue>
+			<Page>first, a special thank you to GameWyrm for helping get this mod off the ground by helping with fixing a game-breaking bug that could also effect normal players and also by introducing me to helpful tools that really streamlined the process!</Page>
+			<Page>thank you to Vambok, solec, Trifid, MegaPiggy and HawkBar for helping me figure out issues and to learn certain aspects of modding like dealing with MXLs. especially when you consider some of them are working on their own jam entries yet still decided to take time to help me which was really kind!</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>continue</Text>
+				<DialogueTarget>ending3</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>ending3</Name>
+		<Dialogue>
+			<Page>and thank you to braindead enthusiast for all the kind words during this mod's development. i wish you the best of luck on your own endevours!</Page>
+			<Page>if you can attest to helping me and weren't mentioned and feel scammed, then thank you and i opologize</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>so... about that win?</Text>
+				<DialogueTarget>ending4</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+	
+	<DialogueNode>
+		<Name>ending4</Name>
+		<Dialogue>
+			<Page>oh right. here, just stand infront of me so i can properly give it, it's kinda awkward from this angle</Page>
+		</Dialogue>
+		<SetCondition>YOURWINNER</SetCondition>
+		<RevealFacts>
+			<FactID>HB_FACT_X1_WIN</FactID>
+		</RevealFacts>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>leave</Name>
+		<Dialogue>
+			<Page>see ya!</Page>
+		</Dialogue>
+	</DialogueNode>
+</DialogueTree>

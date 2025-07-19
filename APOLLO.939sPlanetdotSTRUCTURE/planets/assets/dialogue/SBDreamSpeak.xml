@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
+	<TextBlock>
+		<ID>1</ID>
+		<Text>soaring Boulder: so when i came back to shore after accidentally dropping my first recorder i found this big rock.</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>2</ID>
+		<ParentID>1</ParentID>
+		<Text>i noticed that i could move it with a good amount of ease thanks to this moon's low gravity so i rolled it up the hill which sounds like the basis for a greek tragedy and chucked it into orbit cuz it'd be funny. </Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>3</ID>
+		<ParentID>2</ParentID>
+		<Text>so as it turns out this not a naturally forming moon of a moon. it's exactly what it says on the tin, it's just a boulder.</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>4</ID>
+		<ParentID>3</ParentID>
+		<Text>though side note about that lake; i swear i saw movement from inside so yeah, i'm not going back there. not even to recover my recorder.</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>5</ID>
+		<ParentID>4</ParentID>
+		<Text>alright now to place it there so any visitors can learn whilst visiting. i'm at the same mountain so i just just need to wait for Soaring Boulder to come around again.</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>6</ID>
+		<ParentID>5</ParentID>
+		<Text>Oh! there it is! alright... *whoosh*...*smack followed by distant cheering*</Text>
+	</TextBlock>
+	<ShipLogConditions>
+		<RevealFact>
+			<FactID>SB_FACT_X1</FactID>
+			<Condition>6</Condition>
+		</RevealFact>
+	</ShipLogConditions>
+</NomaiObject>

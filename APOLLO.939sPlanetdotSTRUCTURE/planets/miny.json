@@ -1,0 +1,43 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/body_schema.json",
+  "name": "Miny",
+  "starSystem": "Jam5",
+  "removeChildren": [ "Sector/Star/Audio_Star/SurfaceAudio_Sun" ],
+  "Base": {
+    "surfaceSize": 26,
+    "surfaceGravity": 1,
+    "centerOfSolarSystem": false
+  },
+  "MapMarker": { "enabled": true },
+  "Orbit": {
+    "primaryBody": "MagMag",
+    "semiMajorAxis": 2445,
+    "siderealPeriod": 3,
+    "inclination": 2
+  },
+  "HeightMap": {
+    "minHeight": 25,
+    "maxHeight": 35,
+    "heightMap": "planets/assets/MinyH.png",
+    "textureMap": "planets/assets/minyT.png"
+  },
+  "Props": {
+    "translatorText": [
+      {
+        "xmlFile": "planets/assets/dialogue/MinyDreamSpeak.xml",
+        "type": "recorder",
+        "alignRadial": true,
+        "position": {
+          "x": 0,
+          "y": 25,
+          "z": 0
+        }
+      }
+    ]
+  },
+  "ShipLog": {
+    "xmlFile": "planets/assets/shiplogs/M_fact.xml",
+    "spriteFolder": "planets/assets/shiplogs/sprites",
+    "mapMode": { "revealedSprite": "planets/assets/shiplogs/sprites/Miny_icon.png" }
+  }
+}

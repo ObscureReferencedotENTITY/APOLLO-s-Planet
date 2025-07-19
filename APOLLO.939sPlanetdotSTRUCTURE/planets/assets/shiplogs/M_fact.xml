@@ -1,0 +1,13 @@
+﻿<AstroObjectEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/shiplog_schema.xsd">
+	<ID>M</ID>
+	<Entry>
+		<ID>M_FACT</ID>
+		<Name>Miny</Name>
+		<Curiosity>M_REC</Curiosity>
+		<ExploreFact>
+			<ID>M_FACT_X1</ID>
+			<Text>I found and read the recorder for Miny!</Text>
+		</ExploreFact>
+	</Entry>
+</AstroObjectEntry>

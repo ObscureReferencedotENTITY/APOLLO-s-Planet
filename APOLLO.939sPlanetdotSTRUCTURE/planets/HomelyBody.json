@@ -1,0 +1,165 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/body_schema.json",
+  "name": "Homely Body",
+  "starSystem": "Jam5",
+  "removeChildren": [ "Sector/Star/Audio_Star/SurfaceAudio_Sun" ],
+  "Base": {
+    "surfaceSize": 90,
+    "surfaceGravity": 5,
+    "centerOfSolarSystem": false,
+    "soiOverride": 150
+  },
+  "HeightMap": {
+    "minHeight": 50,
+    "maxHeight": 130,
+    "heightMap": "planets/assets/HomelyBodyH.png",
+    "textureMap": "planets/assets/HomelyBodyT.png"
+  },
+  "MapMarker": {
+    "enabled": true
+  },
+  "Water": {
+    "size": 85
+  },
+  "Orbit": {
+    "primaryBody": "MagMag",
+    "semiMajorAxis": 1300,
+    "siderealPeriod": -3,
+    "inclination": 3
+  },
+  "Atmosphere": {
+    "size": 140,
+    "hasOxygen": true,
+    "atmosphereTint": {
+      "r": 135,
+      "g": 206,
+      "b": 235,
+      "a": 255
+    }
+  },
+  "Props": {
+    "rafts": [
+      {
+        "rename": "HBraft",
+        "position": {
+          "x": 0,
+          "y": 60,
+          "z": 68
+        },
+        "alignRadial": true
+      }
+    ],
+    "translatorText": [
+      {
+        "xmlFile": "planets/assets/dialogue/HBDreamSpeak.xml",
+        "type": "recorder",
+        "position": {
+          "x": 0,
+          "y": 0,
+          "z": 84.9
+        }
+      }
+    ],
+    "details": [
+      {
+        "rename": "HBfire",
+        "path": "TimberHearth_Body/Sector_TH/Sector_Village/Interactables_Village/LaunchTower/Effects_HEA_Campfire",
+        "position": {
+          "x": 0,
+          "y": 86,
+          "z": 0
+        }
+      },
+      {
+        "rename": "HBfireSmoke",
+        "path": "TimberHearth_Body/Sector_TH/Sector_ImpactCrater/Interactables_ImpactCrater/BrambleSeed/Effects_HEA_SmokeColumn_Crash",
+        "alignRadial": true,
+        "keepLoaded": true,
+        "position": {
+          "x": 0,
+          "y": 86,
+          "z": 0
+        }
+      },
+      {
+        "rename": "HBappolo",
+        "path": "QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle",
+        "position": {
+          "x": 0,
+          "y": 85.9,
+          "z": -5
+        },
+        "alignRadial": true
+      },
+      {
+        "rename": "LHBdotErnesto",
+        "path": "Anglerfish_Body/Beast_Anglerfish",
+        "position": {
+          "x": 0,
+          "y": 0,
+          "z": 55
+        },
+        "alignRadial": true,
+        "scale": 0.02,
+        "removeChildren": [
+          "B_angler_root/B_angler_body01/B_angler_body02/B_angler_antenna01/B_angler_antenna02/B_angler_antenna03/B_angler_antenna04/B_angler_antenna05/B_angler_antenna06/B_angler_antenna07/B_angler_antenna08/B_angler_antenna09/B_angler_antenna10/B_angler_antenna11/B_angler_antenna12_end"
+        ]
+      }
+    ],
+    "dialogue": [
+      {
+        "xmlFile": "planets/assets/dialogue/ernestosDreamSpeak.xml",
+        "parentPath": "Sector/LHBdotErnesto",
+        "pathToAnimController": "Sector/LHBdotErnesto",
+        "isRelativeToParent": true,
+        "position": {
+          "x": 0,
+          "y": 0.5,
+          "z": 0
+        },
+        "radius": 2
+      },
+      {
+        "xmlFile": "planets/assets/dialogue/HBappoloDreamSpeak.xml",
+        "parentPath": "Sector/HBappolo",
+        "pathToAnimController": "Sector/HBappolo",
+        "isRelativeToParent": true,
+        "position": {
+          "x": 0,
+          "y": 2,
+          "z": 0
+        },
+        "radius": 2
+      }
+    ]
+  },
+  "ShipLog": {
+    "xmlFile": "planets/assets/shiplogs/HB_fact.xml",
+    "spriteFolder": "planets/assets/shiplogs/sprites",
+    "mapMode": { "revealedSprite": "planets/assets/shiplogs/sprites/HomelyBody_icon.png" }
+  },
+  "Volumes": {
+    "creditsVolume": [
+      {
+        "position": {
+          "x": 0,
+          "y": 85.9,
+          "z": -4.5
+        },
+        "radius": 1,
+        "gameOver": {
+          "text": "APOLLO handed you your win.",
+          "colour": {
+            "r": 0,
+            "g": 255,
+            "b": 0,
+            "a": 255
+          },
+          "condition": "YOURWINNER",
+          "creditsType": "none"
+        },
+        "deathType": "meditation"
+      }
+    ]
+  }
+}
