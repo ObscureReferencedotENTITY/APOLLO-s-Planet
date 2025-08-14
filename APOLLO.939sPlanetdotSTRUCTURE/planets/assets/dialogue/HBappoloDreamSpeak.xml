@@ -83,7 +83,7 @@
 	<DialogueNode>
 		<Name>CrashOut</Name>
 		<Dialogue>
-			<Page>... You know what that would explain why it has it's own subtle gravity, must've been dense enough to survive the crash.</Page>
+			<Page>... You know what that would explain why it has its own subtle gravity, must've been dense enough to survive the crash.</Page>
 			<Page>I just hope that throwing it into orbit doesn't count as vandalism in any sense.</Page>
 		</Dialogue>
 		<DialogueOptionsList>
