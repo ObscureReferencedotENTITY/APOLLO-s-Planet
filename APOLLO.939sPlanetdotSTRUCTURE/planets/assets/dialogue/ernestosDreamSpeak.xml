@@ -9,7 +9,7 @@
 		</Dialogue>
 		<DialogueOptionsList>
 			<DialogueOption>
-				<Text>*sniff* sup</Text>
+				<Text>*sniff* Sup.</Text>
 				<DialogueTarget>2</DialogueTarget>
 			</DialogueOption>
 		</DialogueOptionsList>
@@ -31,7 +31,7 @@
 	<DialogueNode>
 		<Name>3</Name>
 		<Dialogue>
-			<Page>huh, wonder what's up with that</Page>
+			<Page>Huh, wonder what's up with that.</Page>
 		</Dialogue>
 	</DialogueNode>
 </DialogueTree>

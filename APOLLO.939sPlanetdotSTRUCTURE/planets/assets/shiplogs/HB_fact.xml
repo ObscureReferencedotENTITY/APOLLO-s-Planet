@@ -12,11 +12,11 @@ xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New
 </Entry>
 	<Entry>
 		<ID>HB_FACT_WIN</ID>
-		<Name>i won!</Name>
+		<Name>I won!</Name>
 		<Curiosity>HB_WIN</Curiosity>
 		<ExploreFact>
 			<ID>HB_FACT_X1_WIN</ID>
-			<Text>i completed APOLLO's task and he handed me my win! it was a picture of a CGI trophy with the caption "YOU'RE WINNER !"</Text>
+			<Text>I completed APOLLO's task and he handed me my win! It was a picture of a CGI trophy with the caption "YOU'RE A WINNER!"</Text>
 		</ExploreFact>
 	</Entry>
 </AstroObjectEntry>

@@ -9,7 +9,7 @@
 		</Dialogue>
 		<DialogueOptionsList>
 			<DialogueOption>
-				<Text>hello</Text>
+				<Text>Hello.</Text>
 				<DialogueTarget>listen</DialogueTarget>
 			</DialogueOption>
 		</DialogueOptionsList>
@@ -19,7 +19,7 @@
 		<Name>listen</Name>
 		<Dialogue>
 			<Page>The mod you’re about to see doesn’t have a big, epic story…</Page>
-			<Page>but what it DOES have is lots of funny little moons! you wanna see?</Page>
+			<Page>But what it DOES have is lots of funny little moons! you wanna see?</Page>
 		</Dialogue>
 		<DialogueOptionsList>
 			<DialogueOption>
@@ -36,11 +36,11 @@
 	<DialogueNode>
 		<Name>yes</Name>
 		<Dialogue>
-			<Page>great! see you there! Just make sure you fly into the blackhole with your ship as opposed to walking straight in</Page>
+			<Page>Great! See you there! Just make sure you fly into the blackhole with your ship as opposed to walking straight in.</Page>
 		</Dialogue>
 		<DialogueOptionsList>
 			<DialogueOption>
-				<Text>sounds horrible out of context but o-kay!</Text>
+				<Text>Sounds horrible out of context but okay!</Text>
 				<DialogueTarget>leave</DialogueTarget>
 			</DialogueOption>
 		</DialogueOptionsList>
@@ -49,11 +49,11 @@
 	<DialogueNode>
 		<Name>no</Name>
 		<Dialogue>
-			<Page>great! see you there! Just make sure you fly into the blackhole with your ship as opposed to walking straight in</Page>
+			<Page>Great! See you there! Just make sure you fly into the blackhole with your ship as opposed to walking straight in.</Page>
 		</Dialogue>
 		<DialogueOptionsList>
 			<DialogueOption>
-				<Text>but i just said no</Text>
+				<Text>But I just said no?</Text>
 				<DialogueTarget>no2</DialogueTarget>
 			</DialogueOption>
 		</DialogueOptionsList>
@@ -62,7 +62,7 @@
 	<DialogueNode>
 		<Name>no2</Name>
 		<Dialogue>
-			<Page>but by choosing to download this mod you’ve already decided you’d be willing to play it</Page>
+			<Page>But by choosing to download this mod you’ve already decided you’d be willing to play it!</Page>
 		</Dialogue>
 		<DialogueOptionsList>
 			<DialogueOption>
@@ -75,7 +75,7 @@
 	<DialogueNode>
 		<Name>leave</Name>
 		<Dialogue>
-			<Page>see ya!</Page>
+			<Page>See ya!</Page>
 		</Dialogue>
 	</DialogueNode>
 </DialogueTree>

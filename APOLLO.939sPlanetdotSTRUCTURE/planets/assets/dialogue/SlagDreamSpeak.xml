@@ -2,22 +2,22 @@
 <NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
 	<TextBlock>
 		<ID>1</ID>
-		<Text>Slag: is a small moon or rather a cluster of chunks of the same moon that were ripped apart due to tidal forces.</Text>
+		<Text>Slag: is a small moon, or rather a cluster of chunks of the same moon that were ripped apart due to tidal forces.</Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>2</ID>
 		<ParentID>1</ParentID>
-		<Text>these chunks are currently orbiting in the upper-most and thinnest layer of MagMag's atmosphere! how they aren't already long gone is beyond me.</Text>
+		<Text>These chunks are currently orbiting in the upper-most and thinnest layer of MagMag's atmosphere! How they aren't already long gone is beyond me.</Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>3</ID>
 		<ParentID>2</ParentID>
-		<Text>and knowing that makes me being here even more reckless and stupid! so now it's time to record MagMag's analysis. to do that i'll go to Slag's underside.</Text>
+		<Text>And knowing that makes me being here even more reckless and stupid! So now it's time to record MagMag's analysis. To do that I'll go to Slag's underside.</Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>4</ID>
 		<ParentID>3</ParentID>
-		<Text>yes that's stupid but i can't visit MagMag itself. i'm not "try to stand on lava" teir stupid</Text>
+		<Text>Yes, that's stupid but I can't visit MagMag itself. I'm not "try to stand on lava" tier stupid.</Text>
 	</TextBlock>
 	<ShipLogConditions>
 		<RevealFact>
